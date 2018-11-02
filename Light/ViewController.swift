@@ -9,20 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // declare variable lightOn
     var lightOn = true
     
     @IBAction func buttonPressed(_ sender: Any) {
+        // change value lightOn boolean and update interface
         lightOn = !lightOn
         updateUI()
     }
     
     override func viewDidLoad() {
+        // Do any additional setup after loading the view, typically from a nib.
         super.viewDidLoad()
         updateUI()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     func updateUI() {
+        // change background to white if black and to black if white
             view.backgroundColor = lightOn ? .white : .black
     }
 }
