@@ -21,7 +21,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         // Do any additional setup after loading the view, typically from a nib.
         super.viewDidLoad()
-        updateUI()
     }
     
     func updateUI() {
@@ -29,4 +28,3 @@ class ViewController: UIViewController {
             view.backgroundColor = lightOn ? .white : .black
     }
 }
-
